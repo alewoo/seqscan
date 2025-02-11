@@ -69,11 +69,11 @@ pip install -r requirements.txt
   ```
 
 3. In a new terminal, start the frontend development server:
-   ```
+```
    bash
    cd frontend
    npm run dev
-   ```
+```
 
 The application will be available at:
 
