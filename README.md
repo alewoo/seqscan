@@ -2,6 +2,8 @@
 
 A web-based tool for searching and analyzing DNA/RNA sequences in FASTA format files.
 
+![image](https://github.com/user-attachments/assets/752028be-f392-42ab-b8df-ed0a09d33eae)
+
 ## Features
 
 - Upload and parse FASTA files (.fasta, .fa, .seq, .txt)
