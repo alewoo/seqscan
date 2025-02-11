@@ -62,17 +62,17 @@ pip install -r requirements.txt
 
 1. Start the backend server:
 
-  ```
-   bash
-   cd backend
-   uvicorn main:app --reload
-  ```
+```
+bash
+cd backend
+uvicorn main:app --reload
+```
 
 3. In a new terminal, start the frontend development server:
 ```
-   bash
-   cd frontend
-   npm run dev
+bash
+cd frontend
+npm run dev
 ```
 
 The application will be available at:
