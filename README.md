@@ -37,32 +37,43 @@ A web-based tool for searching and analyzing DNA/RNA sequences in FASTA format f
 ### Installation
 
 1. Clone the repository:
-
+```
 bash
 git clone https://github.com/yourusername/seqscan.git
 cd seqscan
-:
+```
+
+2. Set up the frontend:
+```
 bash
 cd frontend
 npm install
-:
+```
+3. Set up the backend:
+```
 bash
 cd ../backend
 python -m venv venv
 source venv/bin/activate # On Windows use: venv\Scripts\activate
 pip install -r requirements.txt
+```
 
 ### Running the Application
 
 1. Start the backend server:
+
+  ```
    bash
    cd backend
    uvicorn main:app --reload
+  ```
 
-2. In a new terminal, start the frontend development server:
+3. In a new terminal, start the frontend development server:
+   ```
    bash
    cd frontend
    npm run dev
+   ```
 
 The application will be available at:
 
