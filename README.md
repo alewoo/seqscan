@@ -94,11 +94,3 @@ The application will be available at:
 2. Upload a FASTA file using the drag-and-drop interface
 3. Once uploaded, use the search box to find specific sequences
 4. View matching results in the table below
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
