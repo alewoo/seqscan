@@ -2,6 +2,8 @@
 
 A web-based tool for searching and analyzing DNA/RNA sequences in FASTA format files.
 
+![image](https://github.com/user-attachments/assets/752028be-f392-42ab-b8df-ed0a09d33eae)
+
 ## Features
 
 - Upload and parse FASTA files (.fasta, .fa, .seq, .txt)
@@ -37,32 +39,43 @@ A web-based tool for searching and analyzing DNA/RNA sequences in FASTA format f
 ### Installation
 
 1. Clone the repository:
-
+```
 bash
 git clone https://github.com/yourusername/seqscan.git
 cd seqscan
-:
+```
+
+2. Set up the frontend:
+```
 bash
 cd frontend
 npm install
-:
+```
+3. Set up the backend:
+```
 bash
 cd ../backend
 python -m venv venv
 source venv/bin/activate # On Windows use: venv\Scripts\activate
 pip install -r requirements.txt
+```
 
 ### Running the Application
 
 1. Start the backend server:
-   bash
-   cd backend
-   uvicorn main:app --reload
 
-2. In a new terminal, start the frontend development server:
-   bash
-   cd frontend
-   npm run dev
+```
+bash
+cd backend
+uvicorn main:app --reload
+```
+
+3. In a new terminal, start the frontend development server:
+```
+bash
+cd frontend
+npm run dev
+```
 
 The application will be available at:
 
@@ -83,11 +96,3 @@ The application will be available at:
 2. Upload a FASTA file using the drag-and-drop interface
 3. Once uploaded, use the search box to find specific sequences
 4. View matching results in the table below
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
