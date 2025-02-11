@@ -59,15 +59,15 @@ export default function UploadForm({ onFileUploaded }: UploadFormProps) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="mb-8">
+    <form onSubmit={handleSubmit} className="space-y-4">
       <div className="flex items-center justify-center w-full">
         <label
           htmlFor="dropzone-file"
-          className="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 hover:bg-gray-100"
+          className="flex flex-col items-center justify-center w-full h-64 rounded-lg border-2 border-dashed border-border bg-secondary hover:bg-secondary/80 cursor-pointer transition-colors"
         >
           <div className="flex flex-col items-center justify-center pt-5 pb-6">
             <svg
-              className="w-10 h-10 mb-3 text-gray-400"
+              className="w-12 h-12 mb-4 text-accent"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -80,11 +80,11 @@ export default function UploadForm({ onFileUploaded }: UploadFormProps) {
                 d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"
               ></path>
             </svg>
-            <p className="mb-2 text-sm text-gray-500">
+            <p className="mb-2 text-sm text-foreground">
               <span className="font-semibold">Click to upload</span> or drag and
               drop
             </p>
-            <p className="text-xs text-gray-500">FASTA file (MAX. 10MB)</p>
+            <p className="text-xs text-text-muted">FASTA file (MAX. 10MB)</p>
           </div>
           <input
             id="dropzone-file"
@@ -98,7 +98,7 @@ export default function UploadForm({ onFileUploaded }: UploadFormProps) {
       <button
         type="submit"
         disabled={!file || uploading}
-        className="mt-4 w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline disabled:opacity-50"
+        className="w-full bg-primary hover:bg-primary-hover text-foreground font-semibold py-3 px-4 rounded-lg transition-colors disabled:opacity-50"
       >
         {uploading ? "Uploading..." : "Upload FASTA File"}
       </button>

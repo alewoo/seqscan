@@ -10,17 +10,16 @@ export default function Home() {
   const [searchResults, setSearchResults] = useState([]);
 
   return (
-    <div className="min-h-screen bg-gray-100">
-      <main className="container mx-auto px-4 py-8">
-        <h1 className="text-4xl font-bold text-center mb-8">
+    <div className="min-h-screen bg-background">
+      <main className="container mx-auto px-8 py-12">
+        <h1 className="text-4xl font-bold text-center mb-12 text-foreground">
           FASTA Sequence Search
         </h1>
-
-        <UploadForm onFileUploaded={() => setFileUploaded(true)} />
-
-        {fileUploaded && <SearchBox onSearchResults={setSearchResults} />}
-
-        {searchResults.length > 0 && <ResultsTable results={searchResults} />}
+        <div className="max-w-[95%] mx-auto space-y-8">
+          <UploadForm onFileUploaded={() => setFileUploaded(true)} />
+          {fileUploaded && <SearchBox onSearchResults={setSearchResults} />}
+          {searchResults.length > 0 && <ResultsTable results={searchResults} />}
+        </div>
       </main>
     </div>
   );
